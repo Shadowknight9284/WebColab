@@ -3,61 +3,75 @@
 }
 
 header {
-    background-color: #333;
-    color: white;
-    text-align: left;
-    padding: 20px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+
+  background-color: #333;
+  color: white;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
-    display: flex;
-    align-items: center; 
+  display: flex;
+  align-items: center; 
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 4px;
+  color: white;
+  text-decoration: none;
+  margin: 0 4px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .title {
-    font-size: 1.5em;
-    font-weight: bold;
-    align-items: center;
-    text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
-    display: flex; 
-  }
-  .column {
-    flex: 1; 
-    padding: 20px; 
-    text-align: center;
-  }
-  .column img {
+  display: flex; 
+}
+.column {
+  flex: 1; 
+  padding: 20px; 
+  text-align: center;
+}
+.column img {
+  width: 100%; 
+  border-radius: 10px; 
+}
+.row {
+  display: flex; 
+}
+.row img {
     width: 100%; 
     border-radius: 10px; 
-  }
-  .row {
-    display: flex; 
-  }
-    .row img {
-        width: 100%; 
-        border-radius: 10px; 
-    }
+}
 
-  body {
-    /* background-image: url('background.webp.jpeg'); */
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    /* --mode: light;  Try to attach a darkmode and lightmode to this */
-  }
+body {
+  color: black;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* --mode: light;  Try to attach a darkmode and lightmode to this */
+}
+
+.dark-mode {
+  /* background-color: #7f7f7f; */
+  background: url(background.webp) center no-repeat;
+  background-size: cover;
+
+  color: white;
+}
+
+.dark-mode img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}

@@ -18,3 +18,8 @@ function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+
+//Inverts image colors bc funny
+function invert(){
+    document.getElementById("roel.jpeg").style.filter="invert(100%)";
+}
