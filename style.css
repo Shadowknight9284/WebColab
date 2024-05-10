@@ -50,3 +50,10 @@ nav a:hover {
         border-radius: 10px; 
     }
 
+  body {
+    /* background-image: url('background.webp.jpeg'); */
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* --mode: light;  Try to attach a darkmode and lightmode to this */
+  }
