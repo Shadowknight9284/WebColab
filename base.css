@@ -7,59 +7,62 @@
   display: none;
 }
 
+/* Header */
 header {
   padding: 20px;
   margin-bottom: 10px;
 
   background-color: #333;
   color: white;
-  text-align: left;
   display: flex;
   justify-content: space-between;
+  text-align: left;
 }
+  h1 {
+    font-size: 2.5em;
+    font: Perpetua;
+  }
+  nav {
+    display: flex;
+    align-items: center; 
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 4px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-nav {
-  display: flex;
-  align-items: center; 
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 4px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
+/* Webpage Sections */
 .title {
   font-size: 1.5em;
   font-weight: bold;
   align-items: center;
   text-align: center;
 }
-
 .container {
   display: flex; 
 }
-.column {
-  flex: 1; 
-  padding: 20px; 
-  text-align: center;
-}
-.column img {
-  width: 100%; 
-  border-radius: 10px; 
-}
-.row {
-  display: flex; 
-}
-.row img {
+  .column {
+    flex: 1; 
+    padding: 20px; 
+    text-align: center;
+  }
+  .column img {
     width: 100%; 
     border-radius: 10px; 
-}
+  }
+  .row {
+    display: flex; 
+  }
+  .row img {
+      width: 100%; 
+      border-radius: 10px; 
+  }
 
+/* Text */
 body {
   color: black;
   background-repeat: repeat;
@@ -67,16 +70,14 @@ body {
   background-attachment: fixed;
   /* --mode: light;  Try to attach a darkmode and lightmode to this */
 }
+  .dark-mode {
+    /* background-color: #7f7f7f; */
+    background: url(media/background.webp) center no-repeat;
+    background-size: cover;
 
-.dark-mode {
-  /* background-color: #7f7f7f; */
-  background: url(media/background.webp) center no-repeat;
-  background-size: cover;
-
-  color: white;
-}
-
-.dark-mode img {
-  -webkit-filter: invert(1);
-  filter: invert(1);
-}
+    color: white;
+  }
+  .dark-mode img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
